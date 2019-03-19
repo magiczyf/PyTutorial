@@ -210,9 +210,9 @@ f(1)
 
 #2 second use. difficult!!!
 # Another use is to pass a small function as an argument:
-pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
-pairs.sort(key=lambda pair: pair[1])
-pairs
+mypairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+mypairs.sort(key=lambda pair: pair[0])  #pair[1] 就是以tuple第二项排序，本例字母顺序
+mypairs
 
 # 4.7.6. Documentation Strings
 def my_function():
